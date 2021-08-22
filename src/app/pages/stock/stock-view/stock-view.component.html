@@ -1,1 +1,12 @@
-<p>stock-view works!</p>
+<div class="page">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image back" (click)="back()">
+        <span>Back</span>
+      </div>
+      <mat-card-title>{{(selectStock$|async)?.name}}</mat-card-title>
+      <mat-card-subtitle>{{(selectStock$|async)?.symbol}}</mat-card-subtitle>
+    </mat-card-header>
+    <div id="chart-container"></div>
+  </mat-card>
+</div>

@@ -13,7 +13,7 @@ const routes: Routes = [
         component: StockListComponent
       },
       {
-        path: 'view',
+        path: 'view/:symbol',
         component: StockViewComponent
       },
       {

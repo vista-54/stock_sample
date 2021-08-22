@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@states/*": ["src/app/store/states/*"],
+      "@store/*": ["src/app/store/*"],
+      "@models/*": ["src/app/store/models/*"],
+      "@effects/*": ["src/app/store/effects/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
